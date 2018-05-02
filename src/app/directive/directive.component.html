@@ -1,0 +1,28 @@
+<input type="text" [value]="dataBinding1" style="width: 25%">
+<span>{{dataBinding1}}</span>
+
+<br>
+<br>
+
+<input type="text" [(ngModel)]="dataBinding2" style="width: 25%">
+<span>{{dataBinding2}}</span>
+
+<br>
+<br>
+
+<span>Ceci est une liaison d'événement: </span><button (click)="changerValeur()">Changer valeur</button>
+
+<hr>
+
+<p [hidden]="!status">p1</p>
+<p [hidden]="status">p2</p>
+
+<button (click)="afficher()">Afficher</button>
+
+<hr>
+
+<ul>
+    <li *ngFor="let text of texts">{{text}}</li>
+</ul>
+
+<hr>
